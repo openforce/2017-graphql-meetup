@@ -23,26 +23,51 @@ class: center, middle
 
 # Introduction to GraphQL with Sangria
 
-## GraphQL Vienna Meetup / 2017-11-13
+## Scala User Group Vienna Meetup / 2017-11-16
 
 Gerhard Hipfinger (@nano4711)
+
+---
+
+# What is GraphQL
+
+* Its an query language for your API
+
+* It's an alternative to RESTful API design
+
+* It empowers the client to define what data he will get
+
+* It's invented by Facebook
+
+* It's relatively new
+
+---
+
+# A RESTful API call
+
+.right.middle[![RESTful Architecture](rest-api.png)]
+
+---
+
+# A GraphQL API call
+
+![GraphQL Architecture](graphql-api.svg)
+
+---
+
+class: center, middle
+
+# Let's take a look at the interactive example
 
 ---
 
 # Sangria is a Scala GraphQL implementation.
 
 * Based on akka-http
+
 * Seamless integration with Playframework
+
 * Fairly easy implementation model
-
----
-
-# What is Scala
-
-* A object orientated and functional hybrid Language
-* Statically typed
-* Runs in the Java Virtual Machine
-* Can use the Java library world
 
 ---
 
@@ -81,7 +106,9 @@ object WebServer {
 # How to work with Sangria
 
 1. Define a GraphQL schema
+
 2. Test the schema
+
 3. Expose a GraphQL endpoint via HTTP (with akka-http or Playframework)
 
 ---
@@ -187,9 +214,23 @@ object Server extends App {
 
 ---
 
+# Pro's and Con's
+
+* Great for read views of public data
+
+* Great integration in ReactJS and other UI frameworks
+
+* Authorization is a bit tricky
+
+* It works best if you don't need any
+
+* Caching can be tricky
+
+---
+
 class: center, middle
 
-# And now see some action!
+# Time for Questions!
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
